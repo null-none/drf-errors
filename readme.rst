@@ -22,20 +22,20 @@ into
 
 .. code:: python
 
-{
-  "message": "This field is required.",
-  "errors": [
     {
-      "field": "email",
-      "message": "This field is required."
-    },
-    {
-      "field": "password",
-      "message": "This field is required."
+      "message": "This field is required.",
+      "errors": [
+        {
+          "field": "email",
+          "message": "This field is required."
+        },
+        {
+          "field": "password",
+          "message": "This field is required."
+        }
+      ],
+      "status_code": 400
     }
-  ],
-  "status_code": 400
-}
 
 Library handles all `Django REST framework`_ built-in serializer validation.
 
