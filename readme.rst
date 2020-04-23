@@ -37,7 +37,6 @@ into
       "status_code": 400
     }
 
-Library handles all `Django REST framework`_ built-in serializer validation.
 
 Requirements
 ------------
