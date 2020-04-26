@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 from django.conf import settings
 from django.utils.translation import ugettext_lazy as _
 
-from rest_framework_friendly_errors.utils import update_field_settings
+from .utils import update_field_settings
 
 
 USER_SETTINGS = getattr(settings, 'FRIENDLY_ERRORS', {})
