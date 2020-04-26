@@ -4,7 +4,7 @@ from django.core.exceptions import ValidationError as DjangoValidationError
 from rest_framework.exceptions import ValidationError as RestValidationError
 from rest_framework.utils.serializer_helpers import ReturnDict
 
-from utils.rest_framework_friendly_errors import settings
+from . import settings
 from utils.rest_framework_friendly_errors.field_map import FieldMap
 
 
