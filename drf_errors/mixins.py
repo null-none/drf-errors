@@ -180,6 +180,7 @@ class FriendlyErrorMessagesMixin(FieldMap):
                     self.get_field_error_entries(errors[error_type], field),
                 )
         if pretty:
-            return {'message': pretty[0]['message'],
+            return {'message': '{}: {}'.format(pretty[0]['field'].title(), pretty[0]['message']),
                     'errors': pretty}
         return {}
+
