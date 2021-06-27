@@ -3,6 +3,24 @@ DRF Errors
 
 **Extension for Django REST framework error display**
 
+Requirements
+------------
+-  Python (2.7, 3.5, 3.6)
+-  Django (3.0.6+)
+-  Django REST framework (>=3.5)
+
+Installation
+------------
+
+By running installation script
+
+Using pip
+
+.. code:: bash
+
+    $ pip install drf-errors
+
+
 Overview
 --------
 
@@ -36,24 +54,6 @@ into
       ],
       "status_code": 400
     }
-
-
-Requirements
-------------
--  Python (2.7, 3.5, 3.6)
--  Django (3.0.6+)
--  Django REST framework (>=3.5)
-
-Installation
-------------
-
-By running installation script
-
-Using pip
-
-.. code:: bash
-
-    $ pip install drf-errors
 
 Usage
 -----
