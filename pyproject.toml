@@ -2,6 +2,7 @@
 [build-system]
 requires = [
     "setuptools>=42",
-    "wheel"
+    "wheel>=0.37.1",
+    "djangorestframework>=3.11.2"
 ]
 build-backend = "setuptools.build_meta"
