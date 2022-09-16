@@ -181,10 +181,15 @@ class FriendlyErrorMessagesMixin(FieldMap):
                 )
         if pretty:
             try:
-                field = pretty[0]['field'].title()
+                field = pretty[0]["field"].title()
+                return {
+                    "message": "{}: {}".format(field, pretty[0]["message"]),
+                    "errors": pretty,
+                }
             except:
-                field = 'Error'
-            return {'message': '{}: {}'.format(field, pretty[0]['message']),
-                    'errors': pretty}
+                return {
+                    "message": "{}".format(pretty[0]["message"]),
+                    "errors": pretty,
+                }
         return {}
 
